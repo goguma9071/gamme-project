@@ -15,6 +15,12 @@ public class gamme extends JFrame {
         setSize(500 , 500);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        FlowLayout fLay = new FlowLayout();
+        getContentPane().setLayout(fLay);
+        JButton btn1 = new JButton("test");
+        getContentPane().add(btn1);
+        JButton btn2 = new JButton("DO NOT PRESSE");
+        getContentPane().add(btn2);
         addKeyListener(new KeyAdapter() {
             public void keyPressed(KeyEvent e) {
                 switch(e.getKeyCode()) {
